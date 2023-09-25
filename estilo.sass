@@ -1,0 +1,219 @@
+*
+  margin: 0
+  padding: 0%
+  box-sizing: border-box
+
+@font-face
+  font-family: ""
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap')
+
+/*GENERAL
+
+body
+  background-color: white
+  color: black
+  line-height: 1.6
+
+header
+  border-bottom: 5px solid #55F
+  border-radius: 30px
+  font-size: large
+
+h1
+  text-align: center
+  margin: 20px
+
+h2
+  text-align: center
+  font-weight: normal
+
+.tipoparrafo1
+  text-align: center
+
+/*MENU, queda igual en todos las paginas
+
+.menu
+  list-style: none
+  padding: 20px
+  background-color: white
+  text-align: center
+  margin-right: 5px
+  border-radius: 20px
+  margin: 5px
+  height: 85px
+  display: grid
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr
+  display: flex
+  justify-content: center
+  cursor: pointer
+
+  li
+    display: inline-block
+    margin-right: 15px
+    margin: 5px
+
+  a
+    text-decoration: none
+    color: grey
+    padding: 10px 15px
+    overflow: hidden
+
+    &:hover
+      color: #55F
+      font-weight: bold
+
+  li .logo img
+    border: white solid
+    max-width: 100%
+    max-height: 100%
+    object-fit: contain
+
+/*FIN MENU
+
+/*INICIO ELEMENTOS INDEX.HTLM
+
+body
+  margin: 20px
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: auto auto auto
+  grid-template-areas: "header" "body" "footer"
+
+.fotoprincipal
+  text-align: center
+
+/*FIN ELEMENTOS INDEX.HTML
+
+/*INICIO ELEMENTOS SOBRE.NOSOTROS.HTML
+/*grilla SOBRE NOSOTROS
+
+body
+  margin: 20px
+  display: grid
+  grid-template-columns: auto auto
+  grid-template-rows: auto auto auto auto auto
+  grid-template-areas: "header header" "titulo titulo" "foto foto" "ladoi ladod" "footer footer"
+  margin: 0%
+
+header
+  grid-area: header
+
+.titulo
+  grid-area: titulo
+
+.fotoprincipal
+  grid-area: foto
+
+.ladoI
+  grid-area: ladoi
+
+.ladoD
+  grid-area: ladod
+
+footer
+  grid-area: footer
+
+/*vista mobile
+@media screen and (min-width: 50px) and (max-width: 768px)
+  body
+    margin: 10px
+
+    /* Adjust margin for smaller screens
+    grid-template-columns: 1fr
+
+    /* Single column layout for smaller screens
+    grid-template-rows: auto auto auto auto auto
+
+    /* Keep the same number of rows
+    grid-template-areas: "header" "titulo" "foto" "ladoi" "ladod" "footer"
+
+/*FIN ELEMENTOS SOBRE.NOSOTROS
+
+/*INICIO ELEMENTOS CONO.ECOLOGICO.HTML
+/*grilla CONOS
+
+body
+  margin: 20px auto
+  display: grid
+  grid-template-columns: auto auto auto
+  grid-template-rows: auto auto auto auto auto
+  grid-template-areas: "header header header" "titulocono titulocono titulocono" "foto1 foto1 texto1" "ventajas ventajas video1" "footer footer footer"
+  margin: 0%
+
+header
+  grid-area: header
+
+.titulocono
+  grid-area: titulocono
+
+.fototexto1
+  grid-area: foto1
+
+.textocono1
+  grid-area: texto1
+
+.ventajas
+  grid-area: ventajas
+
+.videocono
+  grid-area: video1
+
+footer
+  grid-area: footer
+  border: bold 2px #55F
+  border-radius: 5px
+
+/*fin grilla
+/*vista mobile
+@media screen and (min-width: 50px) and (max-width: 768px)
+  body
+    margin: 10px auto
+
+    /* Adjust margin for smaller screens
+    grid-template-columns: auto
+
+    /* Single column layout for smaller screens
+    grid-template-rows: auto auto auto auto auto
+
+    /* Keep the same number of rows
+    grid-template-areas: "header" "titulocono" "foto1" "texto1" "ventajas" "video1" "footer"
+
+.fototexto1
+  height: 500px
+  width: 300px
+  margin-left: 0px
+  justify-content: center
+
+.fotocono1
+  margin: 50px
+  padding: 20px
+  justify-content: center
+
+.textocono1
+  padding: 20px
+  margin-top: 50px
+
+/*FIN ELEMENTOS CONO.ECOLOGICO.HTML
+
+/*INICIO ELEMENTOS PROYECTOS.HTML
+
+.itemproyecto
+  justify-content: center
+  text-align: center
+  height: 50%
+  width: 50%
+
+.fotoproyecto
+  object-fit: cover
+  justify-content: center
+  text-align: center
+
+/*FIN ELEMENTOS PROYECTOS.HTML
+
+/*FOOTER
+
+footer
+  border-top: 5xp solid #55F
+  border-radius: 30px
+
+/*
